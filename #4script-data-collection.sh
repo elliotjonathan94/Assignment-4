@@ -23,6 +23,9 @@ echo "$TIMESTAMP"
 # Create a unique identifier
 UUID=$(cat /proc/sys/kernel/random/uuid)
 # Convert all of the answers that are recorded into a CSV file and compile them
-echo "$HOMETOWN,$GENRE,$WEATHER,$ANIMALS,$FLOWERS" > ./tmp.csv
+echo "$HOMETOWN,$GENRE,$WEATHER,$ANIMALS,$FLOWERS" >> ./tmp.csv
 # Read file in CSV
 cat tmp.csv
+# backup data 
+#
+# Write data to database
